@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Test</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#personal-info" class="scroll-id">Личная информация </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#experience" class="scroll-id">Опыт</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#level-js" class="scroll-id">JavaScript</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#about" class="scroll-id">О себе</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__nav-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="heading" style="background-image: url(./img/heading-img.jpg);">
+        <div class="container">
+            <div class="heading__wrap">
+                <h1 class="heading__title">Анкета</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="personal-info" id="personal-info">
+        <div class="container">
+            <div class="box-icon">
+                <img src="./img/icon-1.png" alt="">
+            </div>
+            <span class="caption">Личная информация</span>
+            <form class="personal-info__form">
+                <div class="personal-info__row">
+                    <div class="input-box">
+                        <input type="text">
+                        <span>ФИО</span>
+                    </div>
+                </div>
+                <div class="personal-info__row personal-info__row--select">
+                    <div class="custom-select">
+                        <div class="custom-select__btn">Год рождения</div>
+                        <ul class="custom-select__list">
+                            <li data-value="2020">2020</li>
+                            <li data-value="2010">2010</li>
+                            <li data-value="2000">2000</li>
+                            <li data-value="2020">2020</li>
+                            <li data-value="2010">2010</li>
+                            <li data-value="2000">2000</li>
+                            <li data-value="2020">2020</li>
+                            <li data-value="2010">2010</li>
+                            <li data-value="2000">2000</li>
+                            <li data-value="2020">2020</li>
+                            <li data-value="2010">2010</li>
+                            <li data-value="2000">2000</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="personal-info__row">
+                    <div class="input-box">
+                        <input type="text">
+                        <span>Место проживания</span>
+                    </div>
+                </div>
+                <div class="personal-info__row">
+                    <div class="input-box">
+                        <input type="text">
+                        <span>Skype</span>
+                    </div>
+                </div>
+                <div class="personal-info__row">
+                    <div class="input-box">
+                        <input type="email">
+                        <span>E-mail</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="experience" id="experience">
+        <div class="container">
+            <div class="box-icon">
+                <img src="./img/icon-2.png" alt="">
+            </div>
+            <span class="caption">Расскажите о своем опыте</span>
+            <div class="experience__wrap">
+                <div class="experience__item">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span>БЭМ/OOCSS</span>
+                    </label>
+                </div>
+                <div class="experience__item">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span>Верстаю семантично</span>
+                    </label>
+                </div>
+                <div class="experience__item">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span>Webpack</span>
+                    </label>
+                </div>
+                <div class="experience__item">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span>Stylus/LESS/SASS</span>
+                    </label>
+                </div>
+                <div class="experience__item">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span>ES2015/ES2016</span>
+                    </label>
+                </div>
+                <div class="experience__item">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span>jQuery</span>
+                    </label>
+                </div>
+                <div class="experience__item">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span>Работаю с SVG</span>
+                    </label>
+                </div>
+                <div class="experience__item">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span>Gulp/GRUNT</span>
+                    </label>
+                </div>
+                <div class="experience__item">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span>Ипользую Git</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="level-js" id="level-js">
+        <div class="container">
+            <div class="box-icon">
+                <img src="./img/icon-3.png" alt="">
+            </div>
+            <span class="caption">Уровень владения JavaScript</span>
+            <div class="level-js__range">
+                <div class="level-js__range-list">
+                    <div class="level-js__range-item">Не владею</div>
+                    <div class="level-js__range-item">Использую готовые решения</div>
+                    <div class="level-js__range-item">Использую готовые решения и умею и переделывать</div>
+                    <div class="level-js__range-item">Пишу сложный JS с нуля</div>
+                </div>
+                <div class="level-js__range-box">
+                    <div class="range-slider"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="container">
+            <div class="box-icon">
+                <img src="./img/icon-4.png" alt="">
+            </div>
+            <span class="caption">Расскажите о себе</span>
+            <p class="about__info">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+            <form>
+                <div class="about__mess">
+                    <textarea placeholder="Понравилась тем, что..."></textarea>
+                </div>
+                <div class="about__btn">
+                    <button class="btn" type="submit">Готово</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/malihu-page-scroll.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
